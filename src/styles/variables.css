@@ -1,0 +1,101 @@
+:root {
+  /* Color Palette - 10 Subject Hues (WCAG AA accessible on light/dark) */
+  --color-subject-1: #3b82f6;  /* Blue */
+  --color-subject-2: #ef4444;  /* Red */
+  --color-subject-3: #22c55e;  /* Green */
+  --color-subject-4: #f59e0b;  /* Amber */
+  --color-subject-5: #8b5cf6;  /* Violet */
+  --color-subject-6: #ec4899;  /* Pink */
+  --color-subject-7: #06b6d4;  /* Cyan */
+  --color-subject-8: #84cc16;  /* Lime */
+  --color-subject-9: #f97316;  /* Orange */
+  --color-subject-10: #6366f1; /* Indigo */
+
+  /* Background & Surface */
+  --color-bg: #f6f7fb;
+  --color-bg-dark: #1e1f26;
+  --color-surface: rgba(255, 255, 255, 0.7);
+  --color-surface-dark: rgba(30, 31, 38, 0.7);
+  --color-border: rgba(0, 0, 0, 0.06);
+  --color-border-dark: rgba(255, 255, 255, 0.1);
+
+  /* Text Colors */
+  --color-text: #1a1a2e;
+  --color-text-dark: #f5f5f5;
+  --color-text-muted: #6b7280;
+  --color-text-muted-dark: #9ca3af;
+
+  /* Focus Ring */
+  --color-focus: rgba(59, 130, 246, 0.5);
+  --focus-ring: 0 0 0 3px var(--color-focus);
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-7: 2rem;     /* 32px */
+  --space-8: 3rem;     /* 48px */
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
+
+  /* Fluid Type Scale (clamp-based) */
+  --text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.75rem);
+  --text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem);
+  --text-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+  --text-lg: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-xl: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  --text-2xl: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+
+  /* Frosted Glass */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-bg-dark: rgba(30, 31, 38, 0.7);
+  --glass-blur: blur(12px);
+  --glass-border: rgba(0, 0, 0, 0.06);
+  --glass-border-dark: rgba(255, 255, 255, 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+
+  /* Layout */
+  --max-width: 1200px;
+  --header-height: 64px;
+  --filter-bar-height: 56px;
+  --shelf-min-height: 120px;
+  --book-unit: 30min; /* conceptual, used in JS for width calc */
+
+  /* Z-Index */
+  --z-filter: 10;
+  --z-modal-backdrop: 40;
+  --z-modal: 50;
+  --z-toast: 60;
+}
+
+/* Dark mode variables (opt-in via class on html) */
+html.dark {
+  --color-bg: var(--color-bg-dark);
+  --color-surface: var(--color-surface-dark);
+  --color-border: var(--color-border-dark);
+  --color-text: var(--color-text-dark);
+  --color-text-muted: var(--color-text-muted-dark);
+  --glass-bg: var(--glass-bg-dark);
+  --glass-border: var(--glass-border-dark);
+}
