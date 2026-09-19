@@ -23,10 +23,22 @@
 - [x] 04 Update/Delete Item
 - [x] 05 LocalStorage Save & Refresh
 - [x] 06 Review & Fix
+- [x] 07 GitHub + Vercel Proof
 
 ## In progress
 
-- [ ] 07 GitHub + Vercel Proof
+- [ ] None — Shipped
+
+## Decisions made
+
+- Build type: Browser-local tool
+- Build shape: Browser-local tool (confirmed)
+- Stack: Vite + React + plain CSS + localStorage
+- Design inspiration: Skeuomorphic bookshelf UI (5 shelves Mon–Fri, books=classes, width=duration, style=type, frosted glass, dynamic color-coding)
+- Storage: localStorage (key: student-schedule)
+- Deployment target: GitHub + Vercel
+- GitHub repo: https://github.com/blackcat-69/student-class-schedule.git
+- Vercel URL: https://student-class-schedule.vercel.app/
 
 ## Last verified state
 
@@ -41,11 +53,11 @@
 - Vercel account: Ready
 - KrackedDevs account: Ready
 - Localhost: Ready
-- Build: Not started
+- Build: Shipped
 
 ## Next instruction for AI
 
-Read `build-status.md`, `build-blueprint.md`, and `work-cards/07-github-vercel-proof.md`. Implement only Work Card 07. Stop after verification and update build-status.md.
+(Planning complete — project shipped)
 
 ## Last verified state
 
